@@ -60,4 +60,5 @@ wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 sudo dpkg -i google-chrome-stable_current_amd64.deb &&\
 sudo apt-get install -f &&\
 rm google-chrome-stable_current_amd64.deb &&\
-sudo apt install ibus-chewing -y
+sudo apt install ibus-chewing -y && \
+ibus-setup
