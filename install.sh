@@ -21,7 +21,7 @@ sudo add-apt-repository \
      "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
      $(lsb_release -cs) \
      stable" -y && \
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90 -y && \
+sudo apt-key adv -y --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90 && \
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list && \
 
 #skype
@@ -52,11 +52,6 @@ sudo chmod +x /usr/local/bin/docker-compose &&\
 docker-compose --version && \
 sudo apt-get install default-jre  default-jdk graphviz vim mysql-workbench spotify-client  skypeforlinux code -y &&\
 
-cp -r .vim/ ~/ &&\
-cp .vimrc ~/ &&\
-cp setting.json ~/.config/Code/User/ &&\
-cp php.json ~/.config/Code/User/snippets/ &&\
-
 # install code extendsion
 code --install-extension Equinusocio.vsc-material-theme &&\
 code --install-extension HvyIndustries.crane &&\
@@ -84,4 +79,4 @@ code --install-extension octref.vetur &&\
 code --install-extension phproberto.vscode-php-getters-setters &&\
 code --install-extension recca0120.vscode-phpunit &&\
 code --install-extension yzane.markdown-pdf &&\
-code --install-extension yzhang.markdown-all-in-one &&\
+code --install-extension yzhang.markdown-all-in-one
