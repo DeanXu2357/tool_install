@@ -1,0 +1,66 @@
+{
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.iconTheme": "material-icon-theme",
+    // "php.executablePath": "/usr/bin/php",
+    "window.zoomLevel": 2,
+    "files.autoSave": "off",
+    "files.autoSaveDelay": 1000,
+    "php.validate.run": "onSave",
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/bin/php",
+    "editor.mouseWheelZoom": true,
+    "editor.renderIndentGuides": true,
+    "editor.formatOnPaste": true,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80,
+    "editor.formatOnType": true,
+    "emmet.syntaxProfiles": {
+        "blade": "html",
+        "javascript": "html",
+        "vue": "html",
+        "vue-html": "html",
+        "php": "html"
+    },
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "javascript": "html",
+        "vue": "html",
+        "vue-html": "html",
+        "php": "html"
+    },
+    "window.restoreFullscreen": true,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.restoreWindows": "all",
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "git.confirmSync": false,
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Darker High Contrast"
+    },
+    "git.autofetch": true,
+    "search.location": "panel",
+    "editor.fontSize": 18,
+    "editor.snippetSuggestions": "top",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    // "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+    // "php-cs-fixer.onsave": true,
+    "workbench.tree.horizontalScrolling": true,
+    "gitlens.historyExplorer.enabled": true,
+}
