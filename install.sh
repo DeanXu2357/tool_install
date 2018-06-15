@@ -52,31 +52,12 @@ sudo chmod +x /usr/local/bin/docker-compose &&\
 docker-compose --version && \
 sudo apt-get install default-jre  default-jdk graphviz vim mysql-workbench spotify-client  skypeforlinux code -y &&\
 
-# install code extendsion
-code --install-extension Equinusocio.vsc-material-theme &&\
-code --install-extension HvyIndustries.crane &&\
-code --install-extension MehediDracula.php-namespace-resolver &&\
-code --install-extension PKief.material-icon-theme &&\
-code --install-extension PeterJausovec.vscode-docker &&\
-code --install-extension alefragnani.Bookmarks &&\
-code --install-extension bmewburn.vscode-intelephense-client &&\
-code --install-extension dbaeumer.vscode-eslint &&\
-code --install-extension donjayamanne.githistory &&\
-code --install-extension eamodio.gitlens &&\
-code --install-extension ecodes.vscode-phpmd &&\
-code --install-extension eriklynd.json-tools &&\
-code --install-extension felixfbecker.php-debug &&\
-code --install-extension felixfbecker.php-intellisense &&\
-code --install-extension hollowtree.vue-snippets &&\
-code --install-extension jcbuisson.vue &&\
-code --install-extension linyang95.php-symbols &&\
-code --install-extension mikestead.dotenv &&\
-code --install-extension monokai.theme-monokai-pro-vscode &&\
-code --install-extension ms-python.python &&\
-code --install-extension ms-vsliveshare.vsliveshare &&\
-code --install-extension neilbrayfield.php-docblocker &&\
-code --install-extension octref.vetur &&\
-code --install-extension phproberto.vscode-php-getters-setters &&\
-code --install-extension recca0120.vscode-phpunit &&\
-code --install-extension yzane.markdown-pdf &&\
-code --install-extension yzhang.markdown-all-in-one
+
+
+
+# 記得加上 ibus chewing & chrome
+wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&\
+sudo dpkg -i google-chrome-stable_current_amd64.deb &&\
+sudo apt-get install -f &&\
+rm google-chrome-stable_current_amd64.deb &&\
+sudo apt install ibus-chewing -y
