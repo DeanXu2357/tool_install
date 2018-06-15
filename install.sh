@@ -52,8 +52,14 @@ sudo chmod +x /usr/local/bin/docker-compose &&\
 docker-compose --version && \
 sudo apt-get install default-jre  default-jdk graphviz vim mysql-workbench spotify-client  skypeforlinux code -y &&\
 
+# 關閉阿怕企自動啟動
+sudo update-rc.d apache2 disable &&\
 
-
+# enable ufw
+sudo ufw enable && \
+sudo ufw default deny incoming &&\
+sudo ufw allow ssh &&\
+sudo ufw logging on &&\
 
 # 記得加上 ibus chewing & chrome
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&\
