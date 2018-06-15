@@ -50,7 +50,7 @@ sudo apt-get install docker-ce -y && \
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose && \
 sudo chmod +x /usr/local/bin/docker-compose &&\
 docker-compose --version && \
-sudo apt-get install default-jre  default-jdk graphviz vim mysql-workbench spotify-client  skypeforlinux code -y &&\
+sudo apt-get install default-jre  default-jdk graphviz vim mysql-workbench spotify-client  skypeforlinux code typora -y &&\
 
 # 關閉阿怕企自動啟動
 sudo update-rc.d apache2 disable &&\
